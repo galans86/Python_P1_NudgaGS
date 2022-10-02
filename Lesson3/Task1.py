@@ -9,10 +9,14 @@
 from random import sample
 
 def new_list(len_list):
+    if len_list <=0:
+        return
     new_list = sample(list(range(1,len_list*2+1)),len_list)
     return new_list
 
 def sum_odd(in_list):
+    if in_list == None:
+        return None
     sum = 0
     for i in range(0,len(in_list),2):
         sum += in_list[i]
