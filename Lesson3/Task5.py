@@ -5,7 +5,6 @@
 # out
 # -21 13 -8 5 -3 2 -1 1 0 1 1 2 3 5 8 13 21
 
-
 def neg_fib(n):
     if n < 0:
         return
@@ -21,7 +20,7 @@ def neg_fib(n):
 
         pos = n-(i-n)
         n_list[pos] =  n_list[i] * ( (-1)** (pos+1) )
-        
+
     return n_list
 
 print(neg_fib(int(input('Введите число: '))))
