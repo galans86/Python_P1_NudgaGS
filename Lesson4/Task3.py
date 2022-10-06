@@ -10,7 +10,6 @@
 # out
 # Negative value of the number of numbers!
 
-from random import sample
 from random import choices
 
 def new_list(len_list: int):
