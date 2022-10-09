@@ -5,6 +5,9 @@ from random import choices
 
 
 def text_new(n, word):
+    if n <=0:  
+        print('The data is incorrect')
+        return ''
     new_line = ''
     new_list = []
     for i in range(n):
