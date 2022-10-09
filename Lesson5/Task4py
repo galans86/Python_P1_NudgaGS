@@ -62,7 +62,7 @@ def candies(all_c: int, max_c: int):
 
 sweets = int(input('Enter number of sweets: '))
 take = int(input('Enter count of sweets you can take: '))
-if sweets < 3*take or not sweets or not take or sweets < 0 or take < 0:
+if sweets < 3*take +1 or not sweets or not take or sweets < 0 or take < 28:
     print('Incorrect input') 
 else:
     print(f'\n{chr(127853)} There are {sweets} sweets on a table. You can take [1...{take}]{chr(127853)} ')
