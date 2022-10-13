@@ -10,11 +10,10 @@ def get_dict(names:str):
     l_d = [ n[:1] for n in names ]
     l_d.sort()
     m_dict = {}.fromkeys(l_d,[])
-    
     for k,v in m_dict.items():
         v = [n for n in names if n[:1] == k]
         m_dict.update({k:v})
-    print(m_dict)
+    return m_dict
 
 names = ["Иван", "Мария", "Петр", "Илья", "Марина", "Петр", "Алина", "Бибочка", "Галочка"]
-get_dict(names)
+print(get_dict(names))
